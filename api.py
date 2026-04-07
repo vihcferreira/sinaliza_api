@@ -17,7 +17,7 @@ try:
 except Exception as e:
     print(f"Erro ao carregar modelo: {e}")
 
-mp_hands = mp.solutions.hands
+import mediapipe.python.solutions.hands as mp_hands
 hands = mp_hands.Hands(
     static_image_mode=True,
     max_num_hands=1,
